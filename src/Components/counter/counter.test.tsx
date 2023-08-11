@@ -59,10 +59,10 @@ describe('Counter', ()=> {
         expect(countElement).toHaveTextContent("10");
     })
 
-    test("elements are focused in the right order", async () => {
-        user.setup();
-        render(<Counter />);
-        const amountInput = screen.getByRole("spinbutton");
-        const setButton = screen.getByRole("button", {name:"set"});
-    })
+    // test("elements are focused in the right order", async () => {
+    //     user.setup();
+    //     render(<Counter />);
+    //     const amountInput = screen.getByRole("spinbutton");
+    //     const setButton = screen.getByRole("button", {name:"set"});
+    // })
 })

@@ -21,7 +21,7 @@ describe("useCounter", () => {
     test("increment the counter", () => {
         const {result} = renderHook(useCounter);
         act(() => result.current.increment());
-        expect(result.current.count).toBe(1);
+        expect(result.current.count).toBe(0x);
     })
 
     // when we update the state we need the act
